@@ -1,3 +1,11 @@
 To run this project, do cd robot-grid, then run npm start to initialize build and view the project.
 
 Once npm start is ran, it should open up automatically in your standard browser of choice, but if not, navigate to http://localhost:3000.
+
+Some afterthoughts on giving the project a "Bellroy" look:
+While i did speculate how a Bellroy look would be for this project, it felt a bit off as none of it would contribute directly to the
+ project. Thoughts i came to was adding a header and footer, and perhaps including fake buttons and text to make it seem more proper and
+ official.
+ What i did include was a similar button design, and i made use of sans-serif as font style as i saw that was used on the website.
+
+ I actively left out code comments as they were not requested, and would love to talk more code in person.

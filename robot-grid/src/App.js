@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import image from './robot.jpg'; // Adjust the path according to your structure
+import image from './robot.jpg';
 
 const Grid = () => {
   const [rotation, setRotation] = useState(0); 
@@ -19,13 +19,13 @@ const Grid = () => {
       const direction = rotation % 360;
       let newPosition = prevPosition;
 
-      if (direction === 0 && prevPosition >= 5) { // Facing up
+      if (direction === 0 && prevPosition >= 5) {
         newPosition -= 5;
-      } else if (direction === 90 && (prevPosition + 1) % 5 !== 0) { // Facing right
+      } else if (direction === 90 && (prevPosition + 1) % 5 !== 0) {
         newPosition += 1;
-      } else if (direction === 180 && prevPosition < 20) { // Facing down
+      } else if (direction === 180 && prevPosition < 20) { 
         newPosition += 5;
-      } else if (direction === 270 && prevPosition % 5 !== 0) { // Facing left
+      } else if (direction === 270 && prevPosition % 5 !== 0) { 
         newPosition -= 1;
       }
 
@@ -36,13 +36,13 @@ const Grid = () => {
   return (
     <>
     <div class='content'>
-      <div className="grid-container">
+      <div className='grid-container'>
         {Array.from({ length: 25 }, (_, index) => (
-          <div className="grid-item" key={index}>
+          <div className='grid-item' key={index}>
             {index === position && (
               <img
                 src={image}
-                alt="Description"
+                alt='Description'
                 style={{ transform: `rotate(${rotation}deg)` }}
               />
             )}
@@ -51,7 +51,7 @@ const Grid = () => {
       </div>
     </div>
     <div class='content'>
-      <div className="buttons">
+      <div className='buttons'>
         <button onClick={rotateLeft}>Rotate Left</button>
         <button onClick={moveForward}>Move Forward</button>
         <button onClick={rotateRight}>Rotate Right</button>
