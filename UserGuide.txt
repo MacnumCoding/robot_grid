@@ -1,0 +1,3 @@
+To run this project, do cd robot-grid, then run npm start to initialize build and view the project.
+
+Once npm start is ran, it should open up automatically in your standard browser of choice, but if not, navigate to http://localhost:3000.
